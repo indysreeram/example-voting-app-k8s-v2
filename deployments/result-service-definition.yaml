@@ -7,10 +7,11 @@ metadata:
     name: result-service
     namespace: vote
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - port: 80
       targetPort: 80
+      nodePort: 30009
   selector:
     name: result-app-pod
     app: demo-voting-app
