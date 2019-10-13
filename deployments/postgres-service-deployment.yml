@@ -4,6 +4,7 @@ metadata:
   name: db
   labels:
     app: demo-voting-app
+    name: db-service
 spec:
   type: ClusterIP
   ports:

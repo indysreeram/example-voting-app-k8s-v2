@@ -4,7 +4,7 @@ metadata:
   name: redis
   labels:
      app: demo-voting-app
-     namespace: vote
+     name: redis-service
 spec:
   type: ClusterIP
   ports:
@@ -13,3 +13,4 @@ spec:
   selector:
     name: redis-pod
     app: demo-voting-app
+
