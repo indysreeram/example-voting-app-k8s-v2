@@ -4,7 +4,6 @@ metadata:
   name: voting-app-deployment
   labels:
     app: demo-voting-app
-    namespace: vote
 spec:
   replicas: 1
   selector:
